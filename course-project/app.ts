@@ -9,7 +9,8 @@ if (typeof userInput === 'string') {
 }
 
 function generateError(message: string, code: number): never {
-  throw { message: message, errorCode: code };
+  console.log('test');
+  //throw { message: message, errorCode: code };
 }
 
 generateError('An error occurred', 500);
