@@ -8,6 +8,7 @@ if (typeof userInput === 'string') {
 }
 function generateError(message, code) {
     console.log('test');
+    throw new Error(message);
     //throw { message: message, errorCode: code };
 }
 generateError('An error occurred', 500);
